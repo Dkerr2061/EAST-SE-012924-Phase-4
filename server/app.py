@@ -17,6 +17,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hotels.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # CORS(app)
+CORS(app)
 
 # create a Migrate object to manage schema modifications
 migrate = Migrate(app, db)
