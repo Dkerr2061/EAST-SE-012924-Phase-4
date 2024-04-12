@@ -9,6 +9,7 @@ from flask_cors import CORS
 from models import db, Hotel, Customer, Review
 
 app = Flask(__name__)
+app.secret_key = b'\xe4\xe2\x9a\xc9m\xb5\x85sG\xf6\xb8\xcf\x00\xa3*\xa2'
 
 # configure a database connection to the local file examples.db
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hotels.db'
